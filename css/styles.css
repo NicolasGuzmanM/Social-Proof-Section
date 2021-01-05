@@ -1,0 +1,152 @@
+:root {
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.main::after,
+.main::before {
+    position: absolute;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.main::after {
+    top: -110px;
+    left: 0;
+    background: url('/images/bg-pattern-top-desktop.svg') no-repeat bottom right;
+}
+
+.main::before {
+    top: 100%;
+    left: 100%;
+    background: url('/images/bg-pattern-bottom-desktop.svg') no-repeat top left;
+}
+
+.top-container {
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    padding-left: 20em;
+    padding-right: 20em;
+    width: 100vw;
+}
+
+.title {
+    width: 25vw;
+}
+
+.title h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 2.9rem;
+    margin-bottom: 10px;
+}
+
+.title p {
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5;
+}
+
+.rates {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px 50px 10px 20px;
+}
+
+.rates p {
+    align-items: center;
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+.stars-top {
+    position: relative;
+    right: 10em;
+}
+
+.stars-middle {
+    position: relative;
+    right: 5em;
+}
+
+.stars img {
+    margin: 0.3em;
+}
+
+
+/* Bottom */
+
+.bottom-container {
+    padding-left: 20em;
+    padding-right: 20em;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    padding: 30px 20px;
+    width: 370px;
+}
+
+.card-middle {
+    position: relative;
+    top: 2em;
+}
+
+.card-left {
+    position: relative;
+    top: 5em;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-info {
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.status {
+    color: hsl(333, 80%, 67%);
+}
+
+.opinion {
+    line-height: 1.5;
+}
